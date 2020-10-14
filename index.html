@@ -27,7 +27,7 @@
   <li><a href="#sec3">College</a></li>
   <li><a href="#sec4">Social</a></li>
   <li><a href="#sec5">Contact</a></li>
-  <li><a href="Login page/login.html">Sign Up</a></li>
+  <li><a href="../Login page/login.html">Sign Up</a></li>
   
   </ul>
   </nav>
@@ -484,7 +484,6 @@ function toggle3(){
                   start:"center center",
                   end:"center top",
                   scrub:1,
-                  markers:true,
                   pin:true
                 }
             });
@@ -508,7 +507,6 @@ function toggle3(){
                   start:"top top",
                   end:"bottom -150%",
                   scrub:1,
-                  markers:true,
                   pin:true
                 }
             });
@@ -541,14 +539,13 @@ function toggle3(){
                 scrollTrigger:{
                   trigger:".content-lan",
                   start:"top top",
-                  end:"bottom -150%",
+                  end:"bottom bottom",
                   scrub:1,
-                  markers:true,
                   pin:true
                 }
             });
             tl.to("nav",{opacity:0,duration:3})
-            tl.to(".imgbx",{y:300,opacity:0,duration:30})
+            tl.to(".imgbx",{y:300,opacity:0,duration:50})
             
         }
     })
@@ -561,7 +558,6 @@ function toggle3(){
                   start:"center center",
                   end:"center top",
                   scrub:1,
-                  markers:true,
                   pin:true
                 }
             });
@@ -590,7 +586,6 @@ function toggle3(){
                   start:"top top",
                   end:"bottom -150%",
                   scrub:1,
-                  markers:true,
                   pin:true,
                 }
             });
@@ -599,20 +594,20 @@ function toggle3(){
             tl.from(".screen",{background:"#e4d7ad",duration:10})
             tl.from(".dk",{opacity:0,duration:10})
             tl.from(".center",{y:-80,duration:50})
-            tl.to(".center",{scale:0.7,duration:100})
+            tl.to(".center",{scale:0.7,duration:50})
             tl.from(".lef",{x:-200,opacity:0,duration:100})
             tl.from(".para",{opacity:0,duration:100})
             tl.to(".dk",{y:-300,opacity:0,duration:0})
             tl.from(".feeg",{y:-400,duration:200})
           
-            tl.to(".feeg",{opacity:0,duration:10})
+            tl.to(".feeg",{opacity:0,duration:50})
            
             tl.from(".feeg2",{y:-500,duration:200})
             
             tl.to(".feeg2",{opacity:0,duration:50})
             
             tl.from(".feeg3",{y:-500,delay:1,duration:200})
-            tl.to(".feeg3",{opacity:0,duration:10})
+            tl.to(".feeg3",{opacity:0,duration:50})
             tl.from(".feeg4",{y:-800,duration:200})
         }
     })
