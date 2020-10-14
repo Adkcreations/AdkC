@@ -539,13 +539,13 @@ function toggle3(){
                 scrollTrigger:{
                   trigger:".content-lan",
                   start:"top top",
-                  end:"bottom bottom",
+                  end:"bottom -150%",
                   scrub:1,
                   pin:true
                 }
             });
             tl.to("nav",{opacity:0,duration:3})
-            tl.to(".imgbx",{y:300,opacity:0,duration:50})
+            tl.to(".imgbx",{y:300,opacity:0,duration:100})
             
         }
     })
